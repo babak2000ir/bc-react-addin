@@ -1,11 +1,14 @@
-page 70249925 PageWithAddIn
+page 70250125 "Sample Page with Add-In TPE"
 {
+    UsageCategory = ReportsAndAnalysis;
+    ApplicationArea = All;
+
     layout
     {
         area(Content)
         {
             // The control add-in can be placed on the page using usercontrol keyword.
-            usercontrol(ControlName; "Control-AddIn Framework TPE")
+            usercontrol("Control-AddIn Framework TPE"; "Control-AddIn Framework TPE")
             {
 
                 ApplicationArea = All;
@@ -31,7 +34,7 @@ page 70249925 PageWithAddIn
                 begin
 
                     // The control add-in methods can be invoked via a reference to the usercontrol.
-                    CurrPage.ControlName.CallJavaScript(5, 'text', 6.3, 'c');
+                    CurrPage."Control-AddIn Framework TPE".CallJavaScript(5, 'text', 6.3, 'c');
                 end;
             }
         }
