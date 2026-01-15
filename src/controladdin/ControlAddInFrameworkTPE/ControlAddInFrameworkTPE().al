@@ -21,7 +21,7 @@ controladdin "Control-AddIn Framework TPE"
     RecreateScript = 'bc-react-app/dist/assets/index.js';
     RefreshScript = 'bc-react-app/dist/assets/index.js';
     Images =
-        'bc-react-app/dist/assets/*.svg';
+        'bc-react-app/dist/*.svg';
 
     // The procedure declarations specify what JavaScript methods could be called from AL.
     // In main.js code, there should be a global function CallJavaScript(i,s,d,c) {Microsoft.Dynamics.NAV.InvokeExtensibilityMethod('CallBack', [i, s, d, c]);}
